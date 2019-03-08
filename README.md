@@ -1,9 +1,9 @@
 # Deep Learning Server
-Machine Name: deepbox19 <br/>
-User Name: deepbox19 <br/>
-Password: deepbox19 <br/>
-IP Address: 136.206.46.19 <br/>
-Location: Lab L130 <br/>
+**Machine Name:** deepbox19 <br/>
+**User Name:** deepbox19 <br/>
+**Password:** deepbox19 <br/>
+**IP Address:** 136.206.46.19 <br/>
+**Location:** Lab L130, School of Computing <br/>
 
 ## SSH Access
 
