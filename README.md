@@ -1,7 +1,7 @@
 # Deep Learning Server
-Machine Name: deepbox19
-User Name: deepbox19
-Password: deepbox19
+Machine Name: deepbox19 <br/>
+User Name: deepbox19 <br/>
+Password: deepbox19 <br/>
 
 ## SSH into the machine
 1. SSH into school of computing gateway
