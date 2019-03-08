@@ -5,13 +5,13 @@ Password: deepbox19 <br/>
 IP Address: 136.206.46.19 <br/>
 
 ## SSH Access
-1. SSH into school of computing gateway
+**1.** SSH into school of computing gateway
 ```
 ssh username@gateway.computing.dcu.ie
 ```
 - The username is from your school of computing account, this is different to the dcu account.
 - If you don't have a school of computing account email Gary Conway (gary.conway@dcu.ie) to get one.
-2. From inside school of computing LAN SSH into the machine
+**2.** From inside school of computing LAN SSH into the machine
 ```
 ssh deepbox19@136.206.46.19
 ```
