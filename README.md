@@ -28,12 +28,13 @@ Git 2.17.1 <br/>
 
 ## Using Docker for Deep Learning
 
-Docker containers are ideal for deep learning as there are loads of docker images available online which provision the required libraries and frameworks to a container. It saves the hassle of manually installing things and managing dependencies. It will also keep the server clean and less likely that we'll need to wipe it at any point in the future. I'm using the *ceshine/cuda-fastai* docker image from [this guide](https://medium.com/the-artificial-impostor/docker-nvidia-gpu-nvidia-docker-808b23e1657) for now, as it has the libraries I use. 
+Docker containers are ideal for deep learning as there are loads of docker images available online to provision whatever libraries and frameworks are required to a container. It saves the hassle of manually installing things and managing dependencies. It will also help keep the server clean and and give us freedom to create loads of different environments. I'm using the *ceshine/cuda-fastai* docker image from [this guide](https://medium.com/the-artificial-impostor/docker-nvidia-gpu-nvidia-docker-808b23e1657) for now, as it has the libraries I use.
 
 https://github.com/floydhub/dl-docker
 
 ## Data Management
 
+When you start a docker container you pass a shared folder to it from the host machine, only the changes that are made in the shared folder will be kept when the container is stopped, everything else is destroyed. I created two folders on the root directory of the machine **/docker_shared_data/sean_data** and **/docker_shared_data/vitor_data**. So we pass can pass these as shared folders to docker containers.
 
 ## Forwarding Python Notebooks
 
