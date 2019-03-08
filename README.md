@@ -18,12 +18,12 @@ IP Address: 136.206.46.19 <br/>
 ## Whats Currently Installed
 OS: Ubuntu server 18.04 <br/>
 
-Nividia 410 Drivers <br/>
+Nvidia 410 Drivers <br/>
 Docker 18.09.3 <br/>
 Nvidia-Docker 2.0.3 <br/>
 Git 2.17.1 <br/>
 
-[Nvidia docker](https://github.com/NVIDIA/nvidia-docker) is what gives docker containers direct access to the host machines GPU.
+[Nvidia docker](https://github.com/NVIDIA/nvidia-docker) is a docker runtime which gives docker containers access to the host machines GPU's.
 
 ## Data Management
 
