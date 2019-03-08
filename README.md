@@ -28,7 +28,7 @@ Git 2.17.1 <br/>
 
 ## Using Docker for Deep Learning
 
-[Docker containers](https://devops.com/docker-vs-vms/) are like lighweight VM's which are better at sharing the host machines resources.
+[Docker containers](https://devops.com/docker-vs-vms/) are like lightweight VM's which are better at sharing the host machines resources.
 
 They are ideal for deep learning as there are loads of good docker images available online to create isolated containers and provision whatever deep learning libraries and frameworks are required. It saves the hassle of manually installing things and managing dependencies on the server itself. It will help keep the server clean and and give us freedom to create loads of different environments. I'm using the *ceshine/cuda-fastai* docker image from [this guide](https://medium.com/the-artificial-impostor/docker-nvidia-gpu-nvidia-docker-808b23e1657) for now, as it has the libraries I use.
 
