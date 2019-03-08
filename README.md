@@ -1,1 +1,1 @@
-# Deep_Learning_Server
+# Managing the Deep Learning Server
