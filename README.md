@@ -6,11 +6,11 @@
 **Location:** Lab L130, School of Computing <br/>
 
 <p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/two.jpg?raw=true" alt="dl baby"/>
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/two.jpg?raw=true" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/three.jpg?raw=true" alt="dl baby"/>
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/three.png?raw=true" />
 </p>
 
 
@@ -101,6 +101,6 @@ Fight like dogs over gpu time
 This is just the setup I think will work best now, we can see how this goes and change it later on if we need to.
 
 <p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/one.jpg?raw=true" alt="dl baby"/>
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/one.jpg?raw=true"/>
 </p>
 
