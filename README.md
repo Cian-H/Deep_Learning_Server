@@ -12,7 +12,7 @@
 - The username is from your school of computing account, this is different to the dcu account.
 - If you don't have a school of computing account email Gary Conway (gary.conway@dcu.ie) to get one.
 
-**2.** From inside school of computing LAN SSH into the machine
+**2.** From inside the school of computing gateway SSH into the machine
 ```ssh deepbox19@136.206.46.19```
 - If you are connected via ethernet cable anywhere in the computing building you don't need to go through gateway. 
 
