@@ -91,3 +91,8 @@ Fight like dogs over gpu time
 This is just the setup I think will work best now, we can see how this goes and change it later on if we need to.
 
 ![dle](one.jpg)
+
+<p align="center">
+  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
