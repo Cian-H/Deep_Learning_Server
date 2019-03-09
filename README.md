@@ -64,21 +64,21 @@ sudo docker exec -it my_container /bin/bash
 
 Jupyter of the container is exposed at port 8889 on the server as specified in our run command.
 
-**1.** Tunnel from server port to gateway port
-ssh into gateway: ```ssh username@gateway.computing.dcu.ie```
-On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.19```
-Jupyter is now exposed on port 8889 of the gateway.
+**1.** Tunnel from server port to gateway port  <br/>
+ssh into gateway: ```ssh username@gateway.computing.dcu.ie```  <br/>
+On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.19```  <br/>
+Jupyter is now exposed on port 8889 of the gateway.  <br/>
 
-**2.** Tunnel from gateway to remote machine
-On remote machine run: ```ssh -N -f -L localhost:8889:localhost:8889 username@gateway.computing.dcu.ie```
-Jupyter is now exposed on port 8889 of the remote machine.
-Open localhost:8889 in browser.
+**2.** Tunnel from gateway to remote machine  <br/>
+On remote machine run: ```ssh -N -f -L localhost:8889:localhost:8889 username@gateway.computing.dcu.ie```  <br/>
+Jupyter is now exposed on port 8889 of the remote machine.  <br/>
+Open localhost:8889 in browser. <br/>
 
 https://amber-md.github.io/pytraj/latest/tutorials/remote_jupyter_notebook
 
 ## Sharing the machine
 #### Jupyter tunnelling  
-If we happen to be using the machine at the same time and forwarding Jupyter ports through tunnel as in example above we need to use different port numbers to avoid problems.
+If we happen to be using the machine at the same time and forwarding Jupyter ports through tunnels as in example above we need to use different port numbers to avoid problems.
 - Sean use port **8889** to foward Jupyter
 - Vitor use port **8890** to forward Jupyter
 
