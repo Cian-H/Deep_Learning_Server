@@ -47,9 +47,10 @@ nvidia-docker run -p 8889:8888 --init -it -v /docker_shared_data/sean_data:/shar
 
 | Parameter      | Explanation |
 |----------------|-------------|
-|`-it`             | This creates an interactive terminal you can use to iteract with your container |
-|`-p 8889:8888`    | This exposes the ports inside the container so they can be accessed from the host. The format is `-p <host-port>:<container-port>`. The default iPython Notebook runs on port 8888, in this case we forward this to port 8889 on the host machine. |
-|`-v /docker_shared_data/sean_data:/sharedfolder` | This shares the folder `/docker_shared_data/sean_data` on your host machine to `/sharedfolder` inside your container. Any data written to this folder by the container will be persistent.
+|`--name my_container`             | Names this container "my_container" |
+|`-it`             | This creates an interactive terminal you can use with your container |
+|`-p 8889:8888`    | This exposes the ports inside the container so they can be accessed from the host. The format is `-p <host-port>:<container-port>`. The default jupyter notebook runs on port 8888 so in this case we forward this to port 8889 on the host machine. |
+|`-v /docker_shared_data/sean_data:/sharedfolder` | This shares the folder `/docker_shared_data/sean_data` on the host machine to `/sharedfolder` inside the container. Any data written to this folder by the container will be persistent.
 |`ceshine/cuda-fastai`   | This the image that you want to run. |
 |`bash`       | This provides the default command when the container is started. Even if this was not provided, bash is the default command and just starts a Bash session. You can modify this to be whatever you'd like to be executed when your container starts. For example, you can execute `docker run -it -p 8888:8888 -p 6006:6006 floydhub/dl-docker:cpu jupyter notebook`. This will execute the command `jupyter notebook` and starts your Jupyter Notebook for you when the container starts
 
@@ -57,10 +58,16 @@ https://amber-md.github.io/pytraj/latest/tutorials/remote_jupyter_notebook
 
 ## Sharing the machine
 #### Jupyter tunnelling  
-- If we happen to be using the machine at the same time and forwarding Jupyter through tunnel as in example above we need to use different port numbers to avoid problems.
+If we happen to be using the machine at the same time and forwarding Jupyter ports through tunnel as in example above we need to use different port numbers to avoid problems.
 - Sean use port 8889 to foward Jupyter
 - Vitor use port 8890 to forward Jupyter
 
 #### Sharing the CPU
+
+## Future Changes
+This is just the setup I think will work best now, we can change this later on if we need to.
+
+
+
 
 
