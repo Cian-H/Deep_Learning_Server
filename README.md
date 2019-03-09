@@ -5,6 +5,8 @@
 **IP Address:** 136.206.46.19 <br/>
 **Location:** Lab L130, School of Computing <br/>
 
+![dl](two.jpg)
+
 ## SSH Access
 
 **1.** SSH into school of computing gateway
@@ -87,3 +89,5 @@ Fight like dogs over gpu time
 
 ## Future Changes
 This is just the setup I think will work best now, we can see how this goes and change it later on if we need to.
+
+![dle](one.jpg)
