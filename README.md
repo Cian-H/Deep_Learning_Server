@@ -53,7 +53,7 @@ sudo nvidia-docker run -p 8889:8888 --init -it -v /docker_shared_data/sean_data:
 |`-v /docker_shared_data/sean_data:/sharedfolder` | This shares the folder `/docker_shared_data/sean_data` on the host machine to `/sharedfolder` inside the container. Any data written to this folder by the container will be persistent.
 |`ceshine/cuda-fastai`   | This the image that you want to run. |
 
-This particular image will automatically launch jupyter upon run, so you need to open a second ssh window. Other ones launch bash etc.. 
+This particular image will automatically launch jupyter upon run. Note the jupyter access token which comes up, you need this for jupyter tunnelling.
 
 #### Open terminal in container 
 This opens a bash shell in the container:
@@ -64,17 +64,16 @@ sudo docker exec -it my_container /bin/bash
 
 Jupyter of the container is exposed at port 8889 on the server as specified in our run command.
 
-**1.** Tunnel from server port to gateway port  <br/>
-ssh into gateway: ```ssh username@gateway.computing.dcu.ie```  <br/>
-On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.19```  <br/>
-Jupyter is now exposed on port 8889 of the gateway.  <br/>
+**1.** Tunnel from server to gateway  <br/>
+- ssh into gateway: ```ssh username@gateway.computing.dcu.ie```  <br/>
+- On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.19```  <br/>
+- Jupyter is now exposed on port 8889 of the gateway.  <br/>
 
 **2.** Tunnel from gateway to remote machine  <br/>
-On remote machine run: ```ssh -N -f -L localhost:8889:localhost:8889 username@gateway.computing.dcu.ie```  <br/>
-Jupyter is now exposed on port 8889 of the remote machine.  <br/>
-Open localhost:8889 in browser. <br/>
-
-https://amber-md.github.io/pytraj/latest/tutorials/remote_jupyter_notebook
+- On remote machine run: ```ssh -N -f -L localhost:8889:localhost:8889 username@gateway.computing.dcu.ie```  <br/>
+- Jupyter is now exposed on port 8889 of the remote machine.  <br/>
+- Open localhost:8889 in browser. <br/>
+- Copy and paste in the jupyter access token, which comes up on the terminal when you run the container.
 
 ## Sharing the machine
 #### Jupyter tunnelling  
