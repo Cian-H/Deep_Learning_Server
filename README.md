@@ -5,7 +5,15 @@
 **IP Address:** 136.206.46.19 <br/>
 **Location:** Lab L130, School of Computing <br/>
 
-![dl](two.jpg)
+<p align="center">
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/two.jpg?raw=true" alt="dl baby"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/three.jpg?raw=true" alt="dl baby"/>
+</p>
+
+
 
 ## SSH Access
 
@@ -39,6 +47,8 @@ Docker is ideal for deep learning as there are loads of good docker images avail
 When you start a docker container you pass a shared folder to it from the host machine, only the changes that are made in the shared folder will be kept when the container is stopped, everything else is destroyed. I created two folders on the root directory of the machine **/docker_shared_data/sean_data** and **/docker_shared_data/vitor_data**. So we can pass the shared folder to the docker containers we create and back up the code from the folder using git.
 
 ## Example: Creating *ceshine/cuda-fastai* container and forwarding Jupyter notebook to remote machine
+
+NEED TO PASS SHARED FOLDER TO HOME DIRECTORY FOR IT TO BE VISIBLE IN JUPYTER
 
 I'm going to use the *ceshine/cuda-fastai* docker image from [this guide](https://medium.com/the-artificial-impostor/docker-nvidia-gpu-nvidia-docker-808b23e1657) for now, as it has the libraries I use (PyTorch). Here's an example of runing a container from this image and tunnelling jupyter from it.
 
