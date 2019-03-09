@@ -40,34 +40,49 @@ When you start a docker container you pass a shared folder to it from the host m
 
 ## Example: Creating ceshine/cuda-fastai container and forwarding Jupyter notebook to remote machine
 
-Create container called my_container from ceshine/cuda-fastai docker image:
+#### Create container from image:
 ```
-nvidia-docker run -p 8889:8888 --init -it -v /docker_shared_data/sean_data:/sharedfolder --name my_container ceshine/cuda-fastai
+sudo nvidia-docker run -p 8889:8888 --init -it -v /docker_shared_data/sean_data:/sharedfolder --name my_container ceshine/cuda-fastai
 ```
 
 | Parameter      | Explanation |
 |----------------|-------------|
 |`--name my_container`             | Names this container "my_container" |
 |`-it`             | This creates an interactive terminal you can use with your container |
-|`-p 8889:8888`    | This exposes the ports inside the container so they can be accessed from the host. The format is `-p <host-port>:<container-port>`. The default jupyter notebook runs on port 8888 so in this case we forward this to port 8889 on the host machine. |
+|`-p 8889:8888`    | This exposes the ports inside the container so they can be accessed from the host. The format is `-p <host-port>:<container-port>`. The default jupyter notebook runs on port 8888 on the container so in this case we forward this to port 8889 on the host machine. |
 |`-v /docker_shared_data/sean_data:/sharedfolder` | This shares the folder `/docker_shared_data/sean_data` on the host machine to `/sharedfolder` inside the container. Any data written to this folder by the container will be persistent.
 |`ceshine/cuda-fastai`   | This the image that you want to run. |
-|`bash`       | This provides the default command when the container is started. Even if this was not provided, bash is the default command and just starts a Bash session. You can modify this to be whatever you'd like to be executed when your container starts. For example, you can execute `docker run -it -p 8888:8888 -p 6006:6006 floydhub/dl-docker:cpu jupyter notebook`. This will execute the command `jupyter notebook` and starts your Jupyter Notebook for you when the container starts
+
+This particular image will automatically launch jupyter upon run, so you need to open a second ssh window. Other ones launch bash etc.. 
+
+#### Open terminal in container 
+This opens a bash shell in the container:
+```
+sudo docker exec -it my_container /bin/bash
+```
+#### Tunnelling Jupyter to remote machine
+
+Jupyter of the container is exposed at port 8889 on the server as specified in our run command.
+
+**1.** Tunnel from server port to gateway port
+ssh into gateway: ```ssh username@gateway.computing.dcu.ie```
+On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.19```
+Jupyter is now exposed on port 8889 of the gateway.
+
+**2.** Tunnel from gateway to remote machine
+On remote machine run: ```ssh -N -f -L localhost:8889:localhost:8889 username@gateway.computing.dcu.ie```
+Jupyter is now exposed on port 8889 of the remote machine.
+Open localhost:8889 in browser.
 
 https://amber-md.github.io/pytraj/latest/tutorials/remote_jupyter_notebook
 
 ## Sharing the machine
 #### Jupyter tunnelling  
 If we happen to be using the machine at the same time and forwarding Jupyter ports through tunnel as in example above we need to use different port numbers to avoid problems.
-- Sean use port 8889 to foward Jupyter
-- Vitor use port 8890 to forward Jupyter
+- Sean use port **8889** to foward Jupyter
+- Vitor use port **8890** to forward Jupyter
 
 #### Sharing the CPU
 
 ## Future Changes
-This is just the setup I think will work best now, we can change this later on if we need to.
-
-
-
-
-
+This is just the setup I think will work best now, we can see how this goes and change it later on if we need to.
