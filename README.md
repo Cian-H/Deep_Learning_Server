@@ -93,7 +93,7 @@ Fight like dogs over gpu time
 ## Future Changes
 This is just the setup I think will work best now, we can see how this goes and change it later on if we need to.
 
-## Perfect for building chihuahua-muffin classifiers.
+## Perfect for building chihuahua or muffin classifiers.
 
 <p align="center">
   <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/1_SVeDXiWfTR5_1X2ct5THVA.jpeg?raw=true"/>
