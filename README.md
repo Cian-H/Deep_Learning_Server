@@ -55,7 +55,7 @@ sudo nvidia-docker run -p 8889:8888 --init -it -v /docker_shared_data/sean_data:
 |`--name my_container`             | Names this container "my_container" |
 |`-it`             | This creates an interactive terminal you can use with your container |
 |`-p 8889:8888`    | This exposes the ports inside the container so they can be accessed from the host. The format is `-p <host-port>:<container-port>`. The default jupyter notebook runs on port 8888 on the container so in this case we forward this to port 8889 on the server. |
-|`-v /docker_shared_data/sean_data:/home/sharedfolder` | This shares the folder `/docker_shared_data/sean_data` on the host machine to `/home/fastai/fastai-courses/sharedfolder` inside the container. Any data written to this folder by the container will be persistent.
+|`-v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder` | This shares the folder `/docker_shared_data/sean_data` on the host machine to `/home/fastai/fastai-courses/sharedfolder` inside the container. Any data written to this folder by the container will be persistent.
 |`ceshine/cuda-fastai`   | This the image that you want to run. |
 
 This particular image will automatically launch jupyter upon run. Note the jupyter access token which comes up, you need this later for jupyter tunnelling.
