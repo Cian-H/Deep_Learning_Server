@@ -103,6 +103,6 @@ This is just the setup I think will work best now, we can see how this goes and 
 #### Perfect for building Chihuahua or muffin classifiers.
 
 <p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/one.jpg?raw=true"/>
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/1_SVeDXiWfTR5_1X2ct5THVA.jpeg?raw=true"/>
 </p>
 
