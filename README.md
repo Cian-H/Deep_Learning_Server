@@ -101,6 +101,6 @@ This is just the setup I think will work best now, nvidia-docker seem's like the
   <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/1_SVeDXiWfTR5_1X2ct5THVA.jpeg?raw=true"/>
 </p>
 
-"The [chihuahua or muffin challenge](https://www.topbots.com/chihuahua-muffin-searching-best-computer-vision-api/) is beyond any learning algorithm we currently possess, it is unlikely to be solved during our lifetime" - Yann LeCunn <br/>
-"This challenge pushes the boundaries of what is theoritically and physically possible, the person who cracks this will be recognised throughout history as one of the great minds" - Yoshua Bengio <br/>
-"The chihuahua-muffin challenge gives us a glimpse of what truely powerful AI might one day achieve, a target to aim for, it reminds us of the modesty of our present day achievements " - Geoffrey Hinton <br/>
+"The [chihuahua or muffin challenge](https://www.topbots.com/chihuahua-muffin-searching-best-computer-vision-api/) is beyond any learning algorithm we currently possess, it is unlikely to be solved during our lifetime" - **Yann LeCunn** <br/>
+"This challenge pushes the boundaries of what is theoritically and physically possible, the person who cracks this will be recognised throughout history as one of the great minds" - **Yoshua Bengio** <br/>
+"The chihuahua-muffin challenge gives us a glimpse of what truely powerful AI might one day achieve, a target to aim for, it reminds us of the modesty of our present day achievements " - **Geoffrey Hinton** <br/>
