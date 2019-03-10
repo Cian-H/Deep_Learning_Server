@@ -1,19 +1,14 @@
 # Deep Learning Server
+
+<p align="center">
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/images.jpg?raw=true" />
+</p>
+
 **Machine Name:** deepbox19 <br/>
 **User Name:** deepbox19 <br/>
 **Password:** deepbox19 <br/>
 **IP Address:** 136.206.46.19 <br/>
 **Location:** Lab L130, School of Computing <br/>
-
-<p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/two.jpg?raw=true" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/three.png?raw=true" />
-</p>
-
-
 
 ## SSH Access
 
@@ -100,7 +95,7 @@ Fight like dogs over gpu time
 ## Future Changes
 This is just the setup I think will work best now, we can see how this goes and change it later on if we need to.
 
-#### Perfect for building Chihuahua or muffin classifiers.
+## Perfect for building chihuahua-muffin classifiers.
 
 <p align="center">
   <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/1_SVeDXiWfTR5_1X2ct5THVA.jpeg?raw=true"/>
