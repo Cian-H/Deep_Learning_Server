@@ -41,7 +41,7 @@ Docker is ideal for deep learning as there are loads of good docker images avail
 
 When you start a docker container you pass a shared folder to it from the host machine, only the changes that are made in the shared folder will be kept when the container is stopped, everything else is destroyed. I created two folders on the root directory of the machine **/docker_shared_data/sean_data** and **/docker_shared_data/vitor_data**. So we can pass the shared folder to the docker containers we create and back up the code from the folder using git.
 
-## Example: Creating *ceshine/cuda-fastai* container and forwarding Jupyter notebook to remote machine
+## Example: Creating container and forwarding Jupyter notebook to the remote machine
 
 NEED TO PASS SHARED FOLDER TO HOME DIRECTORY FOR IT TO BE VISIBLE IN JUPYTER
 
