@@ -95,7 +95,7 @@ Nvidia-docker seems to work okay for sharing GPU time between multiple docker co
 ## Future Changes
 This is just the setup I think will work best now, nvidia-docker seem's like the best solution currently available. We can see how this goes and change the setup in future if we need to.
 
-## Time to tackle the hardest AI challenge of them all: Chihuahua Vs Muffin 
+## But can it handle the hardest (and most important) AI challenge of them all: Chihuahua Vs Muffin
 
 <p align="center">
   <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/1_SVeDXiWfTR5_1X2ct5THVA.jpeg?raw=true"/>
