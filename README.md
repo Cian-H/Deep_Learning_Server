@@ -7,7 +7,7 @@
 **Machine Name:** deepbox19 <br/>
 **User Name:** deepbox19 <br/>
 **Password:** deepbox19 <br/>
-**IP Address:** 136.206.46.19 <br/>
+**IP Address:** 136.206.46.157 <br/>
 **Location:** Lab L130, School of Computing <br/>
 
 ## SSH Access
@@ -18,7 +18,7 @@
 - If you don't have a school of computing account email Gary Conway (gary.conway@dcu.ie) to get one.
 
 **2.** From inside the school of computing gateway SSH into the machine
-```ssh deepbox19@136.206.46.19```
+```ssh deepbox19@136.206.46.157```
 - If you are connected via ethernet cable anywhere in the computing building you don't need to go through gateway. 
 
 ## What's Currently Installed
