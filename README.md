@@ -72,7 +72,7 @@ Jupyter of the container is exposed at port 8889 on the server as specified in o
 
 **1.** Tunnel from server to gateway  <br/>
 - ssh into gateway: ```ssh username@gateway.computing.dcu.ie```  <br/>
-- On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.19```  <br/>
+- On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.157```  <br/>
 - Jupyter is now exposed on port 8889 of the gateway.  <br/>
 
 **2.** Tunnel from gateway to remote machine  <br/>
@@ -95,7 +95,7 @@ Nvidia-docker seems to work okay for sharing GPU time between multiple docker co
 ## Future Changes
 This is just the setup I think will work best now, nvidia-docker seem's like the best solution currently available. We can see how this goes and change the setup in future if we need to.
 
-## Chihuahua or muffin?
+## Chihuahua or muffin
 
 <p align="center">
   <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/1_SVeDXiWfTR5_1X2ct5THVA.jpeg?raw=true"/>
