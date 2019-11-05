@@ -29,7 +29,7 @@ Docker 19.03.4 <br/>
 nvidia-container-toolkit <br/>
 Git 2.17.1 <br/>
 
-[Nvidia docker](https://github.com/NVIDIA/nvidia-docker) is a docker runtime which gives docker containers access to the host machines GPU's.
+[Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-docker) is a docker runtime which gives docker containers access to the host machines GPU's.
 
 ## Data Management
 
