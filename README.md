@@ -24,9 +24,9 @@
 ## What's Currently Installed
 OS: Ubuntu server 18.04 <br/>
 
-Nvidia 410 Driver <br/>
-Docker 18.09.3 <br/>
-Nvidia-Docker 2.0.3 <br/>
+Nvidia Driver 440.26 <br/>
+Docker 19.03.4 <br/>
+nvidia-container-toolkit <br/>
 Git 2.17.1 <br/>
 
 [Nvidia docker](https://github.com/NVIDIA/nvidia-docker) is a docker runtime which gives docker containers access to the host machines GPU's.
@@ -47,7 +47,9 @@ I'm going to use the *ceshine/cuda-fastai* docker image from [this guide](https:
 
 #### Create container from image:
 ```
-sudo nvidia-docker run -p 8889:8888 --init -it -v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder --name my_container ceshine/cuda-fastai
+sudo docker run -p 8889:8888 --init -it -v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder --name my_container ceshine/cuda-fastai
+
+sudo docker run --shm-size 1g --gpus '"device=0"' -p 8889:8888 --init -it -v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder --name my_container ceshine/cuda-fastai
 ```
 
 | Parameter      | Explanation |
@@ -57,6 +59,8 @@ sudo nvidia-docker run -p 8889:8888 --init -it -v /docker_shared_data/sean_data:
 |`-p 8889:8888`    | This exposes the ports inside the container so they can be accessed from the host. The format is `-p <host-port>:<container-port>`. The default jupyter notebook runs on port 8888 on the container so in this case we forward this to port 8889 on the server. |
 |`-v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder` | This shares the folder `/docker_shared_data/sean_data` on the host machine to `/home/fastai/fastai-courses/sharedfolder` inside the container. Any data written to this folder by the container will be persistent.
 |`ceshine/cuda-fastai`   | This the image that you want to run. |
+|`--shm-size`   | Amount of shared RAM to pass, default is very small & might cause problems with PyTorch |
+|`--gpus`   | Specifify which GPU to allow container access to |
 
 This particular image will automatically launch jupyter upon run. Note the jupyter access token which comes up, you need this later for jupyter tunnelling.
 
