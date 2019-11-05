@@ -31,12 +31,6 @@ Git 2.17.1 <br/>
 
 [Nvidia docker](https://github.com/NVIDIA/nvidia-docker) is a docker runtime which gives docker containers access to the host machines GPU's.
 
-## Using Docker for Deep Learning
-
-[Docker containers](https://devops.com/docker-vs-vms/) are like lightweight VM's which are better at sharing the host machines resources. Once you have created a container from a particular docker image once, containers using that same image can then be spun up instantly in future.
-
-Docker is ideal for deep learning as there are loads of good docker images available online to create isolated containers and provision whatever deep learning libraries and frameworks are required. It saves the hassle of manually installing things and managing dependencies on the server itself. It will help keep the server clean and and give us freedom to create loads of different environments. 
-
 ## Data Management
 
 When you start a docker container you pass a shared folder to it from the host machine, only the changes that are made in the shared folder will be kept when the container is stopped, everything else is destroyed. I created two folders on the root directory of the machine **/docker_shared_data/sean_data** and **/docker_shared_data/vitor_data**. So we can pass the shared folder to the docker containers we create and back up the code from the folder using git.
