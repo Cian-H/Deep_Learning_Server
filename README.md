@@ -84,9 +84,6 @@ If we happen to be using the machine at the same time and forwarding Jupyter por
 #### Sharing the GPU
 The machine is built to take two Nvidia Titan Xp GPU's but for the time being we only have one, hopefully nvidia will give us another free one this year.
 
-## Future Changes
-This is just the setup I think will work best now, nvidia-docker seem's like the best solution currently available. We can see how this goes and change the setup in future if we need to.
-
 ## Chihuahua or muffin
 
 <p align="center">
