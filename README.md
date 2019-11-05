@@ -84,8 +84,6 @@ If we happen to be using the machine at the same time and forwarding Jupyter por
 #### Sharing the GPU
 The machine is built to take two Nvidia Titan Xp GPU's but for the time being we only have one, hopefully nvidia will give us another free one this year.
 
-Nvidia-docker seems to work okay for sharing GPU time between multiple docker containers, according to [here](https://github.com/NVIDIA/nvidia-docker/issues/808) anyways, so we don't need to worry about training models at the same time. Unless we're under time pressure to get something trained very quickly.
-
 ## Future Changes
 This is just the setup I think will work best now, nvidia-docker seem's like the best solution currently available. We can see how this goes and change the setup in future if we need to.
 
