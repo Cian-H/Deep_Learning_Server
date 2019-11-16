@@ -90,7 +90,7 @@ The machine is built to take two Nvidia Titan Xp GPU's but for the time being we
   <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/Screenshot 2019-11-15 at 12.05.42.png?raw=true"/>
 </p>
 
-## Chihuahua or muffin
+## !!!!!
 
 <p align="center">
   <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/1_SVeDXiWfTR5_1X2ct5THVA.jpeg?raw=true"/>
