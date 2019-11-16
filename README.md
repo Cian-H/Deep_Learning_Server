@@ -87,7 +87,7 @@ The machine is built to take two Nvidia Titan Xp GPU's but for the time being we
 - If memory is allocated but "Volatile GPU-Util" is 0% then the script has crashed
 
 <p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/X?raw=true"/>
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/Screenshot 2019-11-15 at 12.05.42.png?raw=true"/>
 </p>
 
 ## Chihuahua or muffin
