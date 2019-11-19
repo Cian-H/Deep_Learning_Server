@@ -84,7 +84,7 @@ If we happen to be using the machine at the same time and forwarding Jupyter por
 #### Sharing the GPU
 The machine is built to take two Nvidia Titan Xp GPU's but for the time being we only have one, hopefully nvidia will give us another free one this year.
 - Use nvidia-smi to monitor GPU usage, if we try to allocate more than 12GB at a time everything crashes
-- If memory is allocated but "Volatile GPU-Util" is 0% then the script has crashed
+- If GPU memory is allocated but "Volatile GPU-Util" is 0% then the script is finished or has crashed
 
 <p align="center">
   <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/Screenshot 2019-11-15 at 12.05.42.png?raw=true"/>
