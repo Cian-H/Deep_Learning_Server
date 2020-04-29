@@ -21,11 +21,13 @@
 ```ssh deepbox19@136.206.46.157```
 - If you are connected via ethernet cable anywhere in the computing building you don't need to go through gateway. 
 
-## GPU's
+## GPU's Installed
 [Nvidia Titan Xp](https://www.nvidia.com/en-us/titan/titan-xp/) <br/>
 [Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/)
 
-## What's Currently Installed
+- We can use nvidia-smi to monitor/check GPU usage
+
+## Software Installed
 OS: Ubuntu server 18.04 <br/>
 
 Nvidia Driver 440.26 <br/>
@@ -84,15 +86,6 @@ Jupyter of the container is exposed at port 8889 on the server as specified in o
 If we happen to be using the machine at the same time and forwarding Jupyter ports through tunnels as in example above we need to use different port numbers to avoid problems.
 - Sean use port **8889** to foward Jupyter
 - Vitor use port **8890** to forward Jupyter
-
-#### Sharing the GPU
-The machine is built to take two Nvidia Titan Xp GPU's but for the time being we only have one, hopefully nvidia will give us another free one this year.
-- Use nvidia-smi to monitor GPU usage, if we try to allocate more than 12GB at a time everything crashes
-- If GPU memory is allocated but "Volatile GPU-Util" is 0% then the script is finished or has crashed
-
-<p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/Screenshot 2019-11-15 at 12.05.42.png?raw=true"/>
-</p>
 
 ## !!!!!
 
