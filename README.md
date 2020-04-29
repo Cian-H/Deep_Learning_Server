@@ -21,6 +21,10 @@
 ```ssh deepbox19@136.206.46.157```
 - If you are connected via ethernet cable anywhere in the computing building you don't need to go through gateway. 
 
+## GPU's
+[Nvidia Titan Xp](https://www.nvidia.com/en-us/titan/titan-xp/) <br/>
+[Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/)
+
 ## What's Currently Installed
 OS: Ubuntu server 18.04 <br/>
 
