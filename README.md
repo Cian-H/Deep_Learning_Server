@@ -1,7 +1,7 @@
 # Deep Learning Server
 
 <p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/images.jpg?raw=true" />
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/train.jpg?raw=true" />
 </p>
 
 **Machine Name:** deepbox19 <br/>
@@ -91,5 +91,5 @@ We need to use different port numbers for the tunnelling to avoid problems.
 ## Chihuahua or muffin?
 
 <p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/1_SVeDXiWfTR5_1X2ct5THVA.jpeg?raw=true"/>
+  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/muffin.jpeg?raw=true"/>
 </p>
