@@ -7,7 +7,7 @@
 **Machine Name:** deepbox19 <br/>
 **User Name:** deepbox19 <br/>
 **Password:** deepbox19 <br/>
-**IP Address:** 136.206.46.157 <br/>
+**IP Address:** 136.206.46.7 <br/>
 **Location:** Lab L130, School of Computing <br/>
 
 ## SSH Access
@@ -18,7 +18,7 @@
 - If you don't have a school of computing account email Gary Conway (gary.conway@dcu.ie) to get one.
 
 **2.** From inside the school of computing gateway SSH into the machine
-```ssh deepbox19@136.206.46.157```
+```ssh deepbox19@136.206.46.7```
 - If you are connected via ethernet cable anywhere in the computing building you don't need to go through gateway. 
 
 ## GPU's Installed
@@ -72,7 +72,7 @@ Jupyter of the container is exposed at port 8889 on the server as specified in o
 
 **1.** Tunnel from server to gateway  <br/>
 - ssh into gateway: ```ssh username@gateway.computing.dcu.ie```  <br/>
-- On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.157```  <br/>
+- On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.7```  <br/>
 - Jupyter is now exposed on port 8889 of the gateway.  <br/>
 
 **2.** Tunnel from gateway to remote machine  <br/>
