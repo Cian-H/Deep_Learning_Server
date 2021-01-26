@@ -82,11 +82,15 @@ Jupyter of the container is exposed at port 8889 on the server as specified in o
 - Copy and paste in the jupyter access token, which comes up on the terminal when you run the container.
 
 ## Sharing the machine
+
+#### Time Allocation
+
+- We have a [Google calendar](https://calendar.google.com/calendar/u/1?cid=Y185cDZoZmFnMjU4cnBxaWxtbzhjYjJza28zNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) to coordinate time scheduling for the server, mark off a slot on the calendar with your name and which GPU you are using.
+
 #### Jupyter tunnelling  
 We need to use different port numbers for the tunnelling to avoid problems.
 
-- Sean use port **8889** to foward Jupyter
-- Vitor use port **8890** to forward Jupyter
+- Sean using port **8889** to foward Jupyter
 
 ## Chihuahua or muffin?
 
