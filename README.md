@@ -90,10 +90,4 @@ Jupyter of the container is exposed at port 8889 on the server as specified in o
 #### Jupyter tunnelling  
 We need to use different port numbers for the tunnelling to avoid problems.
 
-- Sean using port **8889** to foward Jupyter
-
-## Chihuahua or muffin?
-
-<p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/muffin.jpeg?raw=true"/>
-</p>
+- Sean is using port **8889** to foward Jupyter
