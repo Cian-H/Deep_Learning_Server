@@ -35,6 +35,17 @@ Git 2.17.1 <br/>
 
 [Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-docker) is a docker runtime which gives docker containers access to the host machines GPU's.
 
+## Sharing the machine
+
+#### Time Allocation
+
+- We have a [Google calendar](https://calendar.google.com/calendar/u/1?cid=Y185cDZoZmFnMjU4cnBxaWxtbzhjYjJza28zNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) to coordinate time scheduling for the server, mark off a slot on the calendar with your name and which GPU you are using.
+
+#### Jupyter tunnelling  
+We need to use different port numbers for the tunnelling to avoid problems.
+
+- Sean is using port **8889** to foward Jupyter
+
 ## Data Management
 
 When you start a docker container you pass a shared folder to it from the host machine, only the changes that are made in the shared folder will be kept when the container is stopped, everything else is destroyed. I created two folders on the root directory of the machine **/docker_shared_data/sean_data** and **/docker_shared_data/vitor_data**. So we can pass the shared folder to the docker containers we create and back up the code from the folder using git.
@@ -78,14 +89,3 @@ Jupyter of the container is exposed at port 8889 on the server as specified in o
 - Jupyter is now exposed on port 8889 of the remote machine.  <br/>
 - Open localhost:8889 in browser. <br/>
 - Copy and paste in the jupyter access token, which comes up on the terminal when you run the container.
-
-## Sharing the machine
-
-#### Time Allocation
-
-- We have a [Google calendar](https://calendar.google.com/calendar/u/1?cid=Y185cDZoZmFnMjU4cnBxaWxtbzhjYjJza28zNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) to coordinate time scheduling for the server, mark off a slot on the calendar with your name and which GPU you are using.
-
-#### Jupyter tunnelling  
-We need to use different port numbers for the tunnelling to avoid problems.
-
-- Sean is using port **8889** to foward Jupyter
