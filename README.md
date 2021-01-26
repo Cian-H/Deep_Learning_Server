@@ -25,8 +25,6 @@
 [Nvidia Titan Xp](https://www.nvidia.com/en-us/titan/titan-xp/) <br/>
 [Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/)
 
-- We can use nvidia-smi to monitor/check GPU usage
-
 ## Software Installed
 OS: Ubuntu server 18.04 <br/>
 
