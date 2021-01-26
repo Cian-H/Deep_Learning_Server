@@ -26,12 +26,11 @@
 [Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/)
 
 ## Software Installed
-OS: Ubuntu server 18.04 <br/>
-
-Nvidia Driver 440.26 <br/>
-Docker 19.03.4 <br/>
+Ubuntu server <br/>
+Nvidia Driver <br/>
+Docker <br/>
 nvidia-container-toolkit <br/>
-Git 2.17.1 <br/>
+Git <br/>
 
 [Nvidia Container Toolkit](https://github.com/NVIDIA/nvidia-docker) is a docker runtime which gives docker containers access to the host machines GPU's.
 
