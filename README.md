@@ -26,7 +26,7 @@
 [Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/)
 
 ## Software Installed
-Ubuntu server <br/>
+Ubuntu Server <br/>
 Nvidia Driver <br/>
 Docker <br/>
 nvidia-container-toolkit <br/>
