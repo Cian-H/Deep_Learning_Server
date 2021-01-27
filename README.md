@@ -22,8 +22,8 @@
 - If you are connected via ethernet cable anywhere in the computing building you don't need to go through gateway. 
 
 ## GPU's Installed
-[Nvidia Titan Xp](https://www.nvidia.com/en-us/titan/titan-xp/) <br/>
-[Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/)
+[Nvidia Titan Xp](https://www.nvidia.com/en-us/titan/titan-xp/) (12 GB) <br/>
+[Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/) (12 GB)
 
 ## Software Installed
 Ubuntu Server <br/>
