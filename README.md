@@ -38,7 +38,7 @@ Git <br/>
 
 #### Time Allocation
 
-- We have a [Google calendar](https://calendar.google.com/calendar/u/1?cid=Y185cDZoZmFnMjU4cnBxaWxtbzhjYjJza28zNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) to coordinate time scheduling for the server, mark off a slot on the calendar with your name and which GPU you are using.
+- We have a Google calendar to coordinate time scheduling for the server, ask someone to be added to it. Mark off time slots on the calendar with your name and which GPU you will be using.
 
 #### Jupyter tunnelling  
 We need to use different port numbers for the tunnelling to avoid problems.
