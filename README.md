@@ -23,7 +23,7 @@
 
 ## GPU's Installed
 [Nvidia Titan Xp](https://www.nvidia.com/en-us/titan/titan-xp/) (12 GB) <br/>
-[Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/) (12 GB)
+[Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/) (24 GB)
 
 ## Software Installed
 Ubuntu Server <br/>
