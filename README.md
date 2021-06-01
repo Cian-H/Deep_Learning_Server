@@ -43,14 +43,10 @@ Git <br/>
 - Mark off time slots on the calendar with your name and which GPU you will be using. If you are only using a % of the GPU's memory, include this info.
 
 #### Port Tunnelling
-We need to keep a record of what port numbers are in use for port tunnelling to avoid problems/confusion. Due to the new security setup in School of Computing we also need to let the school admins (gary.conway@dcu.ie) know which ports are being used (and what for) so custom rules can be written and their side to allow it.
+We need to keep a record of what port numbers are in use for port tunnelling to avoid problems/confusion. Due to the new security setup in School of Computing we also need to let the school admins (gary.conway@dcu.ie) know which ports are being used (and what for) so custom rules can be written on their side to allow it.
 
 List of ports notified to school admins:
 - Seán using port **8889** to tunnel Jupyter Notebook Server
-
-## Data Management
-
-When you start a docker container you pass a shared folder to it from the host machine, only the changes that are made in the shared folder will be kept when the container is stopped, everything else is destroyed. I created two folders on the root directory of the machine **/docker_shared_data/sean_data** and **/docker_shared_data/vitor_data**. So we can pass the shared folder to the docker containers we create and back up the code from the folder using git.
 
 ## Example: Creating container and forwarding Jupyter notebook to the remote machine
 
