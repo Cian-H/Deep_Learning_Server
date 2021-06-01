@@ -12,10 +12,11 @@
 
 ## SSH Access
 
-**1.** SSH into school of computing gateway
-```ssh username@gateway.computing.dcu.ie```
+**1.** SSH into appropriate school of computing gateway
+```ssh username@student.computing.dcu.ie```
 - The username is from your school of computing account, this is different to the dcu account.
 - If you don't have a school of computing account email Gary Conway (gary.conway@dcu.ie) to get one.
+- There are several gateways, student.computing might not be the correct gateway for you, if not, email Gary Conway to find out correct one.
 
 **2.** From inside the school of computing gateway SSH into the machine
 ```ssh deepbox19@136.206.46.7```
@@ -40,10 +41,11 @@ Git <br/>
 
 - We have a Google calendar to coordinate time scheduling for the server, ask someone to be added to it. Mark off time slots on the calendar with your name and which GPU you will be using.
 
-#### Jupyter tunnelling  
-We need to use different port numbers for the tunnelling to avoid problems.
+#### Port Tunnelling
+We need to keep a record of what port numbers are in use for port tunnelling to avoid problems/confusion. Due to the new security setup in School of Computing we also need to let the school admins (gary.conway@dcu.ie) know which ports are being used (and what for) so custom rules can be written and their side to allow it.
 
-- Sean is using port **8889** to foward Jupyter
+List of ports notified to school admins:
+- Seán using port **8889** to foward Jupyter Notebook Server
 
 ## Data Management
 
@@ -79,12 +81,12 @@ sudo docker exec -it my_container /bin/bash
 Jupyter of the container is exposed at port 8889 on the server as specified in our run command.
 
 **1.** Tunnel from server to gateway  <br/>
-- ssh into gateway: ```ssh username@gateway.computing.dcu.ie```  <br/>
-- On gateway run: ```ssh -N -f -L localhost:8889:localhost:8889 deepbox19@136.206.46.7```  <br/>
-- Jupyter is now exposed on port 8889 of the gateway.  <br/>
+- ssh into gateway: ```ssh username@student.computing.dcu.ie```  <br/>
+- On gateway run: ```ssh -N -f -L localhost:1234:localhost:1234 deepbox19@136.206.46.7```  <br/>
+- Jupyter is now exposed on port 1234 of the gateway.  <br/>
 
 **2.** Tunnel from gateway to remote machine  <br/>
-- On remote machine run: ```ssh -N -f -L localhost:8889:localhost:8889 username@gateway.computing.dcu.ie```  <br/>
-- Jupyter is now exposed on port 8889 of the remote machine.  <br/>
-- Open localhost:8889 in browser. <br/>
+- On remote machine run: ```ssh -N -f -L localhost:1234:localhost:1234 username@student.computing.dcu.ie```  <br/>
+- Jupyter is now exposed on port 1234 of the remote machine.  <br/>
+- Open localhost:1234 in browser. <br/>
 - Copy and paste in the jupyter access token, which comes up on the terminal when you run the container.
