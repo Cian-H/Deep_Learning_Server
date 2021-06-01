@@ -39,13 +39,14 @@ Git <br/>
 
 #### Time Allocation
 
-- We have a Google calendar to coordinate time scheduling for the server, ask someone to be added to it. Mark off time slots on the calendar with your name and which GPU you will be using.
+- We have a [Google calendar](https://calendar.google.com/calendar/embed?src=c_9p6hfag258rpqilmo8cb2sko34%40group.calendar.google.com&ctz=Europe%2FDublin) to coordinate time scheduling for the servers GPU's, ask someone to be added to it.
+- Mark off time slots on the calendar with your name and which GPU you will be using. If you are only using a % of the GPU's memory, include this info.
 
 #### Port Tunnelling
 We need to keep a record of what port numbers are in use for port tunnelling to avoid problems/confusion. Due to the new security setup in School of Computing we also need to let the school admins (gary.conway@dcu.ie) know which ports are being used (and what for) so custom rules can be written and their side to allow it.
 
 List of ports notified to school admins:
-- Seán using port **8889** to foward Jupyter Notebook Server
+- Seán using port **8889** to tunnel Jupyter Notebook Server
 
 ## Data Management
 
@@ -55,15 +56,15 @@ When you start a docker container you pass a shared folder to it from the host m
 
 #### Create container from image:
 ```
-sudo docker run --shm-size 1g --gpus '"device=0"' -p 8889:8888 --init -it -v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder --name my_container ceshine/cuda-fastai
+sudo docker run --shm-size 1g --gpus '"device=0"' -p 1234:8888 --init -it -v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder --name my_container ceshine/cuda-fastai
 ```
 
 | Parameter      | Explanation |
 |----------------|-------------|
 |`--name my_container`             | Names this container "my_container" |
 |`-it`             | This creates an interactive terminal you can use with your container |
-|`-p 8889:8888`    | This exposes the ports inside the container so they can be accessed from the host. The format is `-p <host-port>:<container-port>`. The default jupyter notebook runs on port 8888 on the container so in this case we forward this to port 8889 on the server. |
-|`-v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder` | This shares the folder `/docker_shared_data/sean_data` on the host machine to `/home/fastai/fastai-courses/sharedfolder` inside the container. Any data written to this folder by the container will be persistent.
+|`-p 1234:8888`    | This exposes the ports inside the container so they can be accessed from the host. The format is `-p <host-port>:<container-port>`. The default jupyter notebook runs on port 8888 on the container so in this case we forward this to port 1234 on the server. |
+|`-v /docker_shared_data/dummy:/home/fastai/fastai-courses/sharedfolder` | This shares the folder `/docker_shared_data/dummy` on the host machine to `/home/fastai/fastai-courses/sharedfolder` inside the container. Any data written to this folder by the container will be persistent.
 |`ceshine/cuda-fastai`   | This the image that you want to create container from. |
 |`--shm-size`   | Amount of shared RAM to pass, default is very small & sometimes causes problems with big models in PyTorch |
 |`--gpus`   | Specifify which GPU(s) to allow container access to |
@@ -78,7 +79,7 @@ sudo docker exec -it my_container /bin/bash
 
 #### Tunnelling Jupyter to remote machine
 
-Jupyter of the container is exposed at port 8889 on the server as specified in our run command.
+Jupyter of the container is exposed at port 1234 on the server as specified in our run command.
 
 **1.** Tunnel from server to gateway  <br/>
 - ssh into gateway: ```ssh username@student.computing.dcu.ie```  <br/>
