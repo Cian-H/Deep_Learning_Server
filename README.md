@@ -52,7 +52,7 @@ List of ports notified to school admins:
 
 #### Create container from image:
 ```
-sudo docker run --shm-size 1g --gpus '"device=0"' -p 1234:8888 --init -it -v /docker_shared_data/sean_data:/home/fastai/fastai-courses/sharedfolder --name my_container ceshine/cuda-fastai
+sudo docker run --shm-size 1g --gpus '"device=0"' -p 1234:8888 --init -it -v /docker_shared_data/dummy:/home/fastai/fastai-courses/sharedfolder --name my_container ceshine/cuda-fastai
 ```
 
 | Parameter      | Explanation |
