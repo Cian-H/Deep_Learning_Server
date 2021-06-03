@@ -46,7 +46,9 @@ Git <br/>
 We need to keep a record of what port numbers are in use for port tunnelling to avoid problems/confusion. Due to the new security setup in School of Computing we also need to let the school admins (gary.conway@dcu.ie) know which ports are being used (and what for) so custom rules can be written on their side to allow it.
 
 List of ports notified to school admins:
-- Seán using port **8889** to tunnel Jupyter Notebook Server
+- Seán, **8889**, Jupyter Notebook
+- Vitor, **7474**, Neo4j
+- Vitor, **8080**, Apache Airflow
 
 ## Example: Creating container and forwarding Jupyter notebook to the remote machine
 
