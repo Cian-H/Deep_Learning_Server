@@ -1,7 +1,7 @@
 # Deep Learning Server
 
 <p align="center">
-  <img src="https://github.com/squinn95/Deep_Learning_Server/blob/master/train.jpg?raw=true" />
+  <img src="https://github.com/amileo/Deep_Learning_Server/blob/6cb6305b6880f236d8cee6d1c130fa366bbb759f/train.jpg?raw=true" />
 </p>
 
 **Machine Name:** deepbox19 <br/>
@@ -30,7 +30,7 @@
 [Server Parts List](https://github.com/amileo/Deep_Learning_Server/blob/5e4a2bb21018032a6e77243fcedc3d95d596cd29/Parts.pdf)
 
 ## Software Installed
-Ubuntu Server <br/>
+OS: Ubuntu Server <br/>
 Nvidia Driver <br/>
 Docker <br/>
 nvidia-container-toolkit <br/>
