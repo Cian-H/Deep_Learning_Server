@@ -27,8 +27,7 @@
 [Nvidia Titan RTX](https://www.nvidia.com/en-us/deep-learning-ai/products/titan-rtx/) (24 GB)
 
 ## Parts List
-
-[Server Parts List](https://github.com/squinn95/Deep_Learning_Server/blob/master/Server_Parts_List.pdf)
+[Server Parts List](https://github.com/amileo/Deep_Learning_Server/blob/5e4a2bb21018032a6e77243fcedc3d95d596cd29/Parts.pdf)
 
 ## Software Installed
 Ubuntu Server <br/>
