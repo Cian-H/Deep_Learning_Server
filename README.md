@@ -8,6 +8,7 @@
 **User Name:** deepbox19 <br/>
 **Password:** deepbox19 <br/>
 **IP Address:** 136.206.46.7 <br/>
+**MAC Address:** 30:9c:23:e9:37:f3 <br/>
 **Location:** Bulat's Desk, Lab LG01.A, School of Computing <br/>
 
 ## SSH Access
