@@ -11,13 +11,19 @@
 **MAC Address:** 30:9c:23:e9:37:f3 <br/>
 **Location:** Bulat's Desk, Lab LG01.A, School of Computing <br/>
 
+**Machine Name:** xai-computer <br/>
+**User Name:** *get your own from Bulat* <br/>
+**IP Address:** 136.206.46.45 <br/>
+**MAC Address:** 04:42:1a:22:97:e6<br/>
+**Location:** Bulat's Desk, Lab LG01.A, School of Computing <br/>
+
 ## SSH Access
 
 **1.** SSH into appropriate school of computing gateway
 ```ssh username@student.computing.dcu.ie```
-- The username is from your school of computing account, this is different to the dcu account.
-- If you don't have a school of computing account email Gary Conway (gary.conway@dcu.ie) to get one.
-- There are several gateways, student.computing might not be the correct gateway for you, if not, email Gary Conway to find out correct one.
+- The acount is automatically creatd each year after you register for your courses. 
+- If you have any problems email School of Computing support (support@computing.dcu.ie) 
+- There are several gateways, student.computing might not be the correct gateway for you, if not, email SoC support to find out correct one.
 
 **2.** From inside the school of computing gateway SSH into the machine
 ```ssh deepbox19@136.206.46.7```
