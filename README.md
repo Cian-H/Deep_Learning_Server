@@ -99,3 +99,20 @@ Jupyter of the container is exposed at port 1234 on the server as specified in o
 - Jupyter is now exposed on port 1234 of the remote machine.  <br/>
 - Open localhost:1234 in browser. <br/>
 - Copy and paste in the jupyter access token, which comes up on the terminal when you run the container.
+
+## Executing scripst from a custom Dockerfile
+
+- Create a Dockerfile containing your requirements
+
+- Build your docker image 
+
+`sudo docker build -f MyDockerFile -t mydocker .`
+
+- Run your container:
+
+`sudo docker run -d  --shm-size 4g --gpus 'all' --env NVIDIA_DISABLE_REQUIRE=1  -it   --volume="$PWD:/myappfolder" mydocker`
+
+- Or you can specify any script to be executed from within this container
+
+`sudo docker run -d  --shm-size 4g --gpus 'all' --env NVIDIA_DISABLE_REQUIRE=1  -it   --volume="$PWD:/myappfolder" mydocker python myscript.py`
+
