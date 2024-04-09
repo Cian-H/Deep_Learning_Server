@@ -53,7 +53,7 @@ Git <br/>
 - Mark off time slots on the calendar with your name and which GPU you will be using. If you are only using a % of the GPU's memory, include this info.
 
 #### Port Tunnelling
-We need to keep a record of what port numbers are in use for port tunnelling to avoid problems/confusion. Due to the new security setup in School of Computing we also need to let the school admins (gary.conway@dcu.ie) know which ports are being used (and what for) so custom rules can be written on their side to allow it.
+We need to keep a record of what port numbers are in use for port tunnelling to avoid problems/confusion. Due to the new security setup in School of Computing we also need to let the school admins (sean.haran@dcu.ie) know which ports are being used (and what for) so custom rules can be written on their side to allow it.
 
 List of ports notified to school admins:
 - **8889**, Seán, Jupyter Notebook
