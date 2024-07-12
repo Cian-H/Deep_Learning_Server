@@ -21,12 +21,12 @@
 
 **1.** SSH into appropriate school of computing gateway
 ```ssh username@student.computing.dcu.ie```
-- The acount is automatically creatd each year after you register for your courses. 
+- The account is automatically created each year after you register for your courses. 
 - If you have any problems email School of Computing support (support@computing.dcu.ie) 
 - There are several gateways, student.computing might not be the correct gateway for you, if not, email SoC support to find out correct one.
 
-**2.** From inside the school of computing gateway SSH into the machine
-```ssh deepbox19@136.206.46.7```
+**2.** From inside the school of computing gateway SSH into the machine with password authentication
+```sshpass -p deepbox19 ssh -o StrictHostKeyChecking=no deepbox19@136.206.46.7```
 - If you are connected via ethernet cable anywhere in the computing building you don't need to go through gateway. 
 
 ## GPU's Installed
