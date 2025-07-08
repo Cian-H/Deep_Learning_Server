@@ -7,9 +7,9 @@
 **Machine Name:** deepbox19 <br/>
 **User Name:** deepbox19 <br/>
 **Password:** deepbox19 <br/>
-**IP Address:** 136.206.33.210 <br/>
+**IP Address:** 136.206.46.103 <br/>
 **MAC Address:** 30:9c:23:e9:37:f3 <br/>
-**Location:** Lab N207, Bulat/Eric's desk (to be moved to L223A hopefully soon) <br/>
+**Location:** Cian's Desk, L223A <br/>
 
 **Machine Name:** xai-computer <br/>
 **User Name:** *get your own from Bulat* <br/>
