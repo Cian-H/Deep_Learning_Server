@@ -7,15 +7,15 @@
 **Machine Name:** deepbox19 <br/>
 **User Name:** deepbox19 <br/>
 **Password:** deepbox19 <br/>
-**IP Address:** 136.206.46.103 <br/>
+**IP Address:** 136.206.46.135 <br/>
 **MAC Address:** 30:9c:23:e9:37:f3 <br/>
 **Location:** Cian's Desk, L223A <br/>
 
 **Machine Name:** xai-computer <br/>
 **User Name:** *get your own from Bulat* <br/>
-**IP Address:** 136.206.46.45 <br/>
+**IP Address:** 136.206.46.255 <br/>
 **MAC Address:** 04:42:1a:22:97:e6<br/>
-**Location:** Bulat's Desk, Lab LG01.A, School of Computing <br/>
+**Location:** Cian's Desk, L223A <br/>
 
 ## SSH Access
 
