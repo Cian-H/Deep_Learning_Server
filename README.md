@@ -13,7 +13,7 @@
 
 **Machine Name:** xai-computer <br/>
 **User Name:** *get your own from Bulat* <br/>
-**IP Address:** 136.206.46.255 <br/>
+**IP Address:** 136.206.46.45 <br/>
 **MAC Address:** 04:42:1a:22:97:e6<br/>
 **Location:** Cian's Desk, L223A <br/>
 
